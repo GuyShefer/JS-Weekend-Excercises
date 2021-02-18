@@ -3,21 +3,21 @@
     let toWeirdCase = (string) => {
         stringArr = string.split(' ');
         if (stringArr.length !== 1) {
-            return stringArr.map(value => setWeirdCase(value)).join(' ');
+            return stringArr.map(value => setWeirdCaseWord(value)).join(' ');
         }
-        return setWeirdCase(string);
+        return setWeirdCaseWord(string);
     }
 
-    let setWeirdCase = (string) => {
+    let setWeirdCaseWord = (word) => {
 
-        for (let i = 0; i < string.length; i++) {
-            if(i % 2 === 0){
-                string = string.substring(0,i) + string[i].toUpperCase() + string.substring(i+1);
+        for (let i = 0; i < word.length; i++) {
+            if (i % 2 === 0) {
+                word = word.substring(0,i) + word[i].toUpperCase() + word.substring(i+1);
             } else {
-                string = string.substring(0,i) + string[i].toLowerCase() + string.substring(i+1);
+                word = word.substring(0,i) + word[i].toLowerCase() + word.substring(i+1);
             }
         }
-        return string;
+        return word;
     }
 
     console.log(toWeirdCase("String"));
