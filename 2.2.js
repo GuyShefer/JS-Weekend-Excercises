@@ -4,6 +4,7 @@
     let array2 = [0, 0, 1, 0];
     let array3 = [0, 1, 0, 1];
     let array4 = [1, 1, 1, 1];
+    let array5 = [1, 0, 0, 0, 0];
 
     const calcBinaryToNumber = (binaryArr) => {
         let index = 0;
@@ -21,6 +22,7 @@
     console.log(calcBinaryToNumber(array2));
     console.log(calcBinaryToNumber(array3));
     console.log(calcBinaryToNumber(array4));
+    console.log(calcBinaryToNumber(array5));
 
 
 })();
