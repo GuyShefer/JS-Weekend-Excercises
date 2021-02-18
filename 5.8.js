@@ -1,10 +1,9 @@
 (function () {
 
     let shortestWords = (string) => {
-        let word =  string.split(' ').reduce((minWord, currentWord) => {
-            return currentWord.length < minWord.length ? currentWord : minWord;
+        return string.split(' ').reduce((maxWord, currentWord) => {
+            return currentWord.length > maxWord.length ? currentWord : maxWord;
         });
-        return word.length;
     }
 
     console.log(shortestWords('Shefer Guy'));
