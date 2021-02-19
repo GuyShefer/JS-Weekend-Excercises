@@ -3,18 +3,11 @@
     let isIsogram = (string) => {
         string = string.toLowerCase();
         const letters = {};
-        
+
         for (let i = 0; i < string.length; i++) {
             string[i] in letters ? letters[string[i]]++ : letters[string[i]] = 1;
         }
-
-        const letterArr = Object.values(letters);
-        for (let i of letterArr) {
-            if (i > 1) {
-                return false;
-            }
-        }
-        return true;
+        return Object.values(letters).some(x => x > 1) ? false : true;
     }
 
     console.log(isIsogram("Dermatoglyphics"));
