@@ -17,8 +17,9 @@
         return true;
     }
 
-    console.log(isIsogram("Dermatoglyphics"));// == true
-    console.log(isIsogram("aba"));// == f
-    console.log(isIsogram("moOse"));// == f
+    console.log(isIsogram("Dermatoglyphics"));
+    console.log(isIsogram(""));
+    console.log(isIsogram("aba"));
+    console.log(isIsogram("moOse"));
 
 })();

@@ -9,5 +9,4 @@
     console.log(AbbreviateTwoWords('Sam Harris'));
     console.log(AbbreviateTwoWords('Patrick Feeney'));
 
-
 })();
